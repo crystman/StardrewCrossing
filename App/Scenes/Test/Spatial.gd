@@ -2,16 +2,21 @@ extends Node2D
 
 onready var nav : Navigation2D = $Navigation2D
 onready var line : Line2D = $Line2D
-onready var character : Sprite = $Sprite
+onready var character : Sprite = $YSort/Sprite
+
 
 func _unhandled_input(event) -> void:
 	if not event is InputEventMouseButton:
 		return
 	if not event.button_index == BUTTON_LEFT or not event.pressed:
 		return
-	print(event.global_position)
-	print(position)
+	print("character pos:")
+	print(character.position)
+	print("event pos")
+	print((event.global_position - position))
 	var path : = nav.get_simple_path(character.position, (event.global_position - position))
+	print("path:")
+	print(path)
 	line.points = path
 	character.path = path
 

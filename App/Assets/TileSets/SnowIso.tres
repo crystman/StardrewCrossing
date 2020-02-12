@@ -1,0 +1,448 @@
+[gd_resource type="TileSet" load_steps=52 format=2]
+
+[ext_resource path="res://Assets/Images/snow_tile_cornerRound_E.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Images/snow_tile_cornerSquare_E.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Images/snow_tile_cornerSquare_N.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/snow_tile_cornerSquare_S.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Images/snow_tile_cornerRound_N.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Images/snow_tile_cornerRound_S.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Images/snow_tile_cornerRound_W.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Images/snow_tile_treeQuad.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Images/snow_tile_tree.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Images/snow_tile_rock.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Images/snow_tile_split_N.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Images/snow_tile_crossing.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Images/snow_tile_cornerSquare_W.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Images/snow_tile_split_E.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Images/snow_tile_split_W.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Images/snow_tile_split_S.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Images/snow_tile_crystal.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Images/snow_tile_straight_E.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Images/snow_tile.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Images/snow_tile_straight_N.png" type="Texture" id=24]
+
+[sub_resource type="NavigationPolygon" id=1]
+vertices = PoolVector2Array( 65, 0, 130, 33, 65, 66, 0, 33, 65, 0 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4 ) ]
+
+[sub_resource type="NavigationPolygon" id=6]
+vertices = PoolVector2Array( 0, 66, 130, 1.52588e-05, 260, 66, 130, 129 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="StreamTexture" id=32]
+flags = 4
+load_path = "res://.import/snow_tile_cornerLarge_E.png-0b2c9600d776b48de1d1d1167e2d40f3.stex"
+
+[sub_resource type="NavigationPolygon" id=7]
+vertices = PoolVector2Array( 0, 33, 65, 3.05176e-05, 130, 33, 65, 66 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="NavigationPolygon" id=8]
+vertices = PoolVector2Array( 0, 33, 65, 3.05176e-05, 130, 33, 65, 66 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="NavigationPolygon" id=9]
+vertices = PoolVector2Array( 0, 33, 65, 3.05176e-05, 130, 33, 65, 66 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="NavigationPolygon" id=10]
+vertices = PoolVector2Array( 0, 33, 65, 3.05176e-05, 130, 33, 65, 66 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="NavigationPolygon" id=11]
+vertices = PoolVector2Array( 0, 33, 65, 3.05176e-05, 130, 33, 65, 66 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 65, 12, 130, 48, 65, 81, 0, 48 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 0, 42, 65, 9.00003, 130, 42, 65, 75 )
+
+[sub_resource type="NavigationPolygon" id=14]
+vertices = PoolVector2Array( 0, 33, 65, 3.05176e-05, 130, 33, 65, 66 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="NavigationPolygon" id=15]
+vertices = PoolVector2Array( 0, 33, 65, 3.05176e-05, 130, 33, 65, 66 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="NavigationPolygon" id=16]
+vertices = PoolVector2Array( 0, 33, 65, 3.05176e-05, 130, 33, 65, 66 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="NavigationPolygon" id=17]
+vertices = PoolVector2Array( 0, 66, 130, 1.52588e-05, 260, 66, 130, 129 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="StreamTexture" id=33]
+flags = 4
+load_path = "res://.import/snow_tile_cornerLarge_N.png-8c096c27a9441778ef438be17c96a548.stex"
+
+[sub_resource type="NavigationPolygon" id=18]
+vertices = PoolVector2Array( 0, 33, 65, 3.05176e-05, 130, 33, 65, 66 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="NavigationPolygon" id=19]
+vertices = PoolVector2Array( 0, 33, 65, 3.05176e-05, 130, 33, 65, 66 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="NavigationPolygon" id=20]
+vertices = PoolVector2Array( 0, 33, 65, 3.05176e-05, 130, 33, 65, 66 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="NavigationPolygon" id=21]
+vertices = PoolVector2Array( 0, 63, 65, 30, 130, 63, 65, 96 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="OccluderPolygon2D" id=22]
+polygon = PoolVector2Array( 45, 69, 65, 72, 85, 63, 85, 48, 30, 30, 25, 45 )
+
+[sub_resource type="ConvexPolygonShape2D" id=23]
+points = PoolVector2Array( 55, 54, 75, 54, 80, 63, 75, 69, 55, 69, 50, 63 )
+
+[sub_resource type="OccluderPolygon2D" id=24]
+polygon = PoolVector2Array( 5, 72, 5, 81, 65, 105, 120, 78, 115, 72, 50, 33 )
+
+[sub_resource type="ConvexPolygonShape2D" id=25]
+points = PoolVector2Array( 65, 45, 130, 78, 65, 111, 0, 78 )
+
+[sub_resource type="NavigationPolygon" id=26]
+vertices = PoolVector2Array( 0, 66, 130, 1.52588e-05, 260, 66, 130, 129 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="StreamTexture" id=34]
+flags = 4
+load_path = "res://.import/snow_tile_cornerLarge_S.png-7fef5a3cddb4faa256dc32980a62239a.stex"
+
+[sub_resource type="NavigationPolygon" id=27]
+vertices = PoolVector2Array( 0, 66, 130, 1.52588e-05, 260, 66, 130, 129 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="StreamTexture" id=35]
+flags = 4
+load_path = "res://.import/snow_tile_cornerLarge_W.png-63ae3d44e605d5065a522d8627b55a83.stex"
+
+[sub_resource type="NavigationPolygon" id=28]
+vertices = PoolVector2Array( 0, 33, 65, 3.05176e-05, 130, 33, 65, 66 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="NavigationPolygon" id=29]
+vertices = PoolVector2Array( 0, 33, 65, 3.05176e-05, 130, 33, 65, 66 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="NavigationPolygon" id=30]
+vertices = PoolVector2Array( 0, 33, 65, 3.05176e-05, 130, 33, 65, 66 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[sub_resource type="NavigationPolygon" id=31]
+vertices = PoolVector2Array( 0, 33, 65, 3.05176e-05, 130, 33, 65, 66 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+
+[resource]
+0/name = "snow_tile.png 0"
+0/texture = ExtResource( 23 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 191, 267, 130, 81 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/navigation = SubResource( 1 )
+0/shapes = [  ]
+0/z_index = 0
+1/name = "snow_tile_cornerLarge_E.png 1"
+1/texture = SubResource( 32 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 126, 234, 260, 147 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/navigation = SubResource( 6 )
+1/shapes = [  ]
+1/z_index = 0
+2/name = "snow_tile_cornerLarge_N.png 2"
+2/texture = SubResource( 33 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 126, 234, 260, 147 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/navigation = SubResource( 17 )
+2/shapes = [  ]
+2/z_index = 0
+3/name = "snow_tile_cornerLarge_S.png 3"
+3/texture = SubResource( 34 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 126, 234, 260, 147 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/navigation = SubResource( 26 )
+3/shapes = [  ]
+3/z_index = 0
+4/name = "snow_tile_cornerLarge_W.png 4"
+4/texture = SubResource( 35 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 126, 234, 260, 147 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/navigation = SubResource( 27 )
+4/shapes = [  ]
+4/z_index = 0
+5/name = "snow_tile_cornerRound_E.png 5"
+5/texture = ExtResource( 1 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 191, 267, 130, 81 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/navigation = SubResource( 28 )
+5/shapes = [  ]
+5/z_index = 0
+6/name = "snow_tile_cornerRound_N.png 6"
+6/texture = ExtResource( 7 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 241, 276, 5, 3 )
+6/tile_mode = 1
+6/autotile/bitmask_mode = 0
+6/autotile/bitmask_flags = [  ]
+6/autotile/icon_coordinate = Vector2( 0, 0 )
+6/autotile/tile_size = Vector2( 5, 3 )
+6/autotile/spacing = 0
+6/autotile/occluder_map = [  ]
+6/autotile/navpoly_map = [  ]
+6/autotile/priority_map = [  ]
+6/autotile/z_index_map = [  ]
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shapes = [  ]
+6/z_index = 0
+7/name = "snow_tile_cornerRound_N.png 7"
+7/texture = ExtResource( 7 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 191, 267, 130, 81 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/navigation = SubResource( 29 )
+7/shapes = [  ]
+7/z_index = 0
+8/name = "snow_tile_cornerRound_S.png 8"
+8/texture = ExtResource( 8 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 191, 267, 130, 81 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/navigation = SubResource( 30 )
+8/shapes = [  ]
+8/z_index = 0
+9/name = "snow_tile_cornerRound_W.png 9"
+9/texture = ExtResource( 10 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 191, 267, 130, 81 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/navigation = SubResource( 31 )
+9/shapes = [  ]
+9/z_index = 0
+10/name = "snow_tile_cornerSquare_E.png 10"
+10/texture = ExtResource( 2 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 191, 267, 130, 81 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/navigation = SubResource( 7 )
+10/shapes = [  ]
+10/z_index = 0
+11/name = "snow_tile_cornerSquare_N.png 11"
+11/texture = ExtResource( 4 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 191, 267, 130, 81 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/navigation = SubResource( 8 )
+11/shapes = [  ]
+11/z_index = 0
+12/name = "snow_tile_cornerSquare_S.png 12"
+12/texture = ExtResource( 6 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 191, 267, 130, 81 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/navigation = SubResource( 9 )
+12/shapes = [  ]
+12/z_index = 0
+13/name = "snow_tile_cornerSquare_W.png 13"
+13/texture = ExtResource( 16 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 191, 267, 130, 81 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/navigation = SubResource( 10 )
+13/shapes = [  ]
+13/z_index = 0
+14/name = "snow_tile_crossing_E.png 14"
+14/texture = ExtResource( 15 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 191, 267, 130, 81 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 0, 0 )
+14/navigation_offset = Vector2( 0, 0 )
+14/navigation = SubResource( 11 )
+14/shapes = [  ]
+14/z_index = 0
+15/name = "snow_tile_crystal.png 15"
+15/texture = ExtResource( 21 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 191, 252, 130, 96 )
+15/tile_mode = 0
+15/occluder_offset = Vector2( 0, 0 )
+15/navigation_offset = Vector2( 0, 0 )
+15/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+15/z_index = 0
+16/name = "snow_tile_rock.png 16"
+16/texture = ExtResource( 13 )
+16/tex_offset = Vector2( 0, 0 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 191, 258, 130, 90 )
+16/tile_mode = 0
+16/occluder_offset = Vector2( 0, 0 )
+16/navigation_offset = Vector2( 0, 0 )
+16/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+16/z_index = 0
+17/name = "snow_tile_split_E.png 17"
+17/texture = ExtResource( 17 )
+17/tex_offset = Vector2( 0, 0 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 191, 267, 130, 81 )
+17/tile_mode = 0
+17/occluder_offset = Vector2( 0, 0 )
+17/navigation_offset = Vector2( 0, 0 )
+17/navigation = SubResource( 14 )
+17/shapes = [  ]
+17/z_index = 0
+18/name = "snow_tile_split_N.png 18"
+18/texture = ExtResource( 14 )
+18/tex_offset = Vector2( 0, 0 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 191, 267, 130, 81 )
+18/tile_mode = 0
+18/occluder_offset = Vector2( 0, 0 )
+18/navigation_offset = Vector2( 0, 0 )
+18/navigation = SubResource( 15 )
+18/shapes = [  ]
+18/z_index = 0
+19/name = "snow_tile_split_S.png 19"
+19/texture = ExtResource( 19 )
+19/tex_offset = Vector2( 0, 0 )
+19/modulate = Color( 1, 1, 1, 1 )
+19/region = Rect2( 191, 267, 130, 81 )
+19/tile_mode = 0
+19/occluder_offset = Vector2( 0, 0 )
+19/navigation_offset = Vector2( 0, 0 )
+19/navigation = SubResource( 16 )
+19/shapes = [  ]
+19/z_index = 0
+20/name = "snow_tile_split_W.png 20"
+20/texture = ExtResource( 18 )
+20/tex_offset = Vector2( 0, 0 )
+20/modulate = Color( 1, 1, 1, 1 )
+20/region = Rect2( 191, 267, 130, 81 )
+20/tile_mode = 0
+20/occluder_offset = Vector2( 0, 0 )
+20/navigation_offset = Vector2( 0, 0 )
+20/navigation = SubResource( 18 )
+20/shapes = [  ]
+20/z_index = 0
+21/name = "snow_tile_straight_E.png 21"
+21/texture = ExtResource( 22 )
+21/tex_offset = Vector2( 0, 0 )
+21/modulate = Color( 1, 1, 1, 1 )
+21/region = Rect2( 191, 267, 130, 81 )
+21/tile_mode = 0
+21/occluder_offset = Vector2( 0, 0 )
+21/navigation_offset = Vector2( 0, 0 )
+21/navigation = SubResource( 19 )
+21/shapes = [  ]
+21/z_index = 0
+22/name = "snow_tile_straight_N.png 22"
+22/texture = ExtResource( 24 )
+22/tex_offset = Vector2( 0, 0 )
+22/modulate = Color( 1, 1, 1, 1 )
+22/region = Rect2( 191, 267, 130, 81 )
+22/tile_mode = 0
+22/occluder_offset = Vector2( 0, 0 )
+22/navigation_offset = Vector2( 0, 0 )
+22/navigation = SubResource( 20 )
+22/shapes = [  ]
+22/z_index = 0
+23/name = "snow_tile_tree.png 23"
+23/texture = ExtResource( 12 )
+23/tex_offset = Vector2( 0, 0 )
+23/modulate = Color( 1, 1, 1, 1 )
+23/region = Rect2( 191, 237, 130, 111 )
+23/tile_mode = 0
+23/occluder_offset = Vector2( 0, 0 )
+23/occluder = SubResource( 22 )
+23/navigation_offset = Vector2( 0, 0 )
+23/navigation = SubResource( 21 )
+23/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 23 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+23/z_index = 0
+24/name = "snow_tile_treeQuad.png 24"
+24/texture = ExtResource( 11 )
+24/tex_offset = Vector2( 0, 10 )
+24/modulate = Color( 1, 1, 1, 1 )
+24/region = Rect2( 191, 222, 130, 126 )
+24/tile_mode = 0
+24/occluder_offset = Vector2( 0, 0 )
+24/occluder = SubResource( 24 )
+24/navigation_offset = Vector2( 0, 0 )
+24/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 25 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+24/z_index = 0
