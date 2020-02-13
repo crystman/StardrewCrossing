@@ -14,8 +14,11 @@
 [ext_resource path="res://Assets/Images/snow_tile_split_W.png" type="Texture" id=18]
 [ext_resource path="res://Assets/Images/snow_tile_split_S.png" type="Texture" id=19]
 [ext_resource path="res://Assets/Images/snow_tile_straight_E.png" type="Texture" id=22]
-[ext_resource path="res://Assets/Images/snow_tile.png" type="Texture" id=23]
 [ext_resource path="res://Assets/Images/snow_tile_straight_N.png" type="Texture" id=24]
+
+[sub_resource type="StreamTexture" id=6]
+flags = 4
+load_path = "res://.import/snow_tile.png-36351d7629d4574f576ce4c09205746f.stex"
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 0, 11, 64, -21, 128, 11, 64, 43 )
@@ -45,186 +48,205 @@ outlines = [ PoolVector2Array( 64, 14, 64, -21, 128, 11, 64, 43 ) ]
 [node name="Tileset" type="Node2D"]
 
 [node name="snow_tile" type="Sprite" parent="."]
-texture = ExtResource( 23 )
+texture = SubResource( 6 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="snow_tile"]
 navpoly = SubResource( 1 )
 
 [node name="snow_tile_blocked_top" type="Sprite" parent="."]
 visible = false
-texture = ExtResource( 23 )
+texture = SubResource( 6 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="snow_tile_blocked_top"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 2 )
 
 [node name="snow_tile_blocked_bottom" type="Sprite" parent="."]
 visible = false
-texture = ExtResource( 23 )
+texture = SubResource( 6 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="snow_tile_blocked_bottom"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 3 )
 
 [node name="snow_tile_blocked_left" type="Sprite" parent="."]
 visible = false
-texture = ExtResource( 23 )
+texture = SubResource( 6 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="snow_tile_blocked_left"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 4 )
 
 [node name="snow_tile_blocked_right" type="Sprite" parent="."]
 visible = false
-texture = ExtResource( 23 )
+texture = SubResource( 6 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="snow_tile_blocked_right"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 5 )
 
 [node name="snow_tile_blocked_all" type="Sprite" parent="."]
 visible = false
-texture = ExtResource( 23 )
+texture = SubResource( 6 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="snow_tile_cornerRound_E" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 1 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance2" type="NavigationPolygonInstance" parent="snow_tile_cornerRound_E"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 1 )
 
 [node name="snow_tile_cornerRound_N" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 7 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance3" type="NavigationPolygonInstance" parent="snow_tile_cornerRound_N"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 1 )
 
 [node name="snow_tile_cornerRound_S" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 8 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance4" type="NavigationPolygonInstance" parent="snow_tile_cornerRound_S"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 1 )
 
 [node name="snow_tile_cornerRound_W" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 10 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance5" type="NavigationPolygonInstance" parent="snow_tile_cornerRound_W"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 1 )
 
 [node name="snow_tile_cornerSquare_E" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 2 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance6" type="NavigationPolygonInstance" parent="snow_tile_cornerSquare_E"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 1 )
 
 [node name="snow_tile_cornerSquare_N" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 4 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance7" type="NavigationPolygonInstance" parent="snow_tile_cornerSquare_N"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 1 )
 
 [node name="snow_tile_cornerSquare_S" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 6 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance8" type="NavigationPolygonInstance" parent="snow_tile_cornerSquare_S"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 1 )
 
 [node name="snow_tile_cornerSquare_W" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 16 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance9" type="NavigationPolygonInstance" parent="snow_tile_cornerSquare_W"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 1 )
 
 [node name="snow_tile_crossing" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 15 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance10" type="NavigationPolygonInstance" parent="snow_tile_crossing"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 1 )
 
 [node name="snow_tile_split_E" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 17 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance11" type="NavigationPolygonInstance" parent="snow_tile_split_E"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 1 )
 
 [node name="snow_tile_split_N" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 14 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance12" type="NavigationPolygonInstance" parent="snow_tile_split_N"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 1 )
 
 [node name="snow_tile_split_S" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 19 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance13" type="NavigationPolygonInstance" parent="snow_tile_split_S"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 1 )
 
 [node name="snow_tile_split_W" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 18 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance14" type="NavigationPolygonInstance" parent="snow_tile_split_W"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 1 )
 
 [node name="snow_tile_straight_E" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 22 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance15" type="NavigationPolygonInstance" parent="snow_tile_straight_E"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 1 )
 
 [node name="snow_tile_straight_N" type="Sprite" parent="."]
 visible = false
 texture = ExtResource( 24 )
 centered = false
-offset = Vector2( -192, -288 )
+offset = Vector2( -190.5, -268 )
 
 [node name="NavigationPolygonInstance16" type="NavigationPolygonInstance" parent="snow_tile_straight_N"]
+position = Vector2( 1, 20 )
 navpoly = SubResource( 1 )
