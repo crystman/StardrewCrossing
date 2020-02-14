@@ -1,0 +1,42 @@
+{
+	"name": "Mark",
+	"gender": "M",
+	"speed": 600,
+	"schedule": [
+		{
+			"time": 0,
+			"locationX": -791,
+			"locationY": 455
+		},
+		{
+			"time": 1,
+			"locationX": -608,
+			"locationY": 691
+		},
+		{
+			"time": 5,
+			"locationX": -747,
+			"locationY": 309
+		},
+		{
+			"time": 6,
+			"locationX": -159,
+			"locationY": 382
+		},
+		{
+			"time": 9,
+			"locationX": 248,
+			"locationY": 444
+		},
+		{
+			"time": 10,
+			"locationX": -737,
+			"locationY": -43
+		},
+		{
+			"time": 11,
+			"locationX": -766,
+			"locationY": 732
+		}
+	]
+}

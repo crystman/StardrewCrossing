@@ -1,0 +1,47 @@
+{
+	"name": "Jill",
+	"gender": "F",
+	"speed": 400,
+	"schedule": [
+		{
+			"time": 0,
+			"locationX": 871,
+			"locationY": 667
+		},
+		{
+			"time": 1,
+			"locationX": 845,
+			"locationY": 70
+		},
+		{
+			"time": 5,
+			"locationX": -538,
+			"locationY": 808
+		},
+		{
+			"time": 6,
+			"locationX": -634,
+			"locationY": 281
+		},
+		{
+			"time": 7,
+			"locationX": 870,
+			"locationY": 330
+		},
+		{
+			"time": 9,
+			"locationX": 248,
+			"locationY": 444
+		},
+		{
+			"time": 10,
+			"locationX": -766,
+			"locationY": 732
+		},
+		{
+			"time": 11,
+			"locationX": -737,
+			"locationY": -43
+		}
+	]
+}

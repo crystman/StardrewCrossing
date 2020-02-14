@@ -1,5 +1,7 @@
 extends Node2D
 
+const NPC = preload("res://Scenes/Character/Character.tscn")
+
 onready var nav : Navigation2D = $Navigation2D
 onready var line : Line2D = $Line2D
 onready var character : Sprite = $YSort/Sprite
@@ -9,22 +11,26 @@ var hour: int = 0
 
 var npcs = []
 
+var _scrollSpeed = 300
+var _sprintMulti = 2
+
 func _ready():
+	readCharacters()
 	for node in $YSort.get_children():
 		if not node is Sprite:
-			print("found character")
 			npcs.append(node)
+	pass
 
 func _unhandled_input(event) -> void:
 	if event is InputEventMouseButton:
 		if event.button_index == BUTTON_LEFT and event.pressed:
-			print("character pos:")
-			print(character.position)
-			print("event pos")
-			print((event.global_position - position))
+#			print("character pos:")
+#			print(character.position)
+#			print("event pos")
+#			print((event.global_position - position))
 			var path : = nav.get_simple_path(character.position, (event.global_position - position))
-			print("path:")
-			print(path)
+#			print("path:")
+#			print(path)
 			line.points = path
 			character.path = path
 		elif event.button_index == BUTTON_RIGHT and event.pressed:
@@ -39,12 +45,8 @@ func _unhandled_input(event) -> void:
 			elif tile_name == "snow_tile":
 				var snow_tile_blocked_id = $Navigation2D/TileMap.tile_set.find_tile_by_name("snow_tile_blocked")
 				$Navigation2D/TileMap.set_cellv(cell_pos, snow_tile_blocked_id)
-				
+	pass
 
-var _scrollSpeed = 300
-var _sprintMulti = 2
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var multi = _sprintMulti if Input.is_action_pressed("ui_shift") else 1
 	if Input.is_action_pressed("ui_up"):
@@ -68,3 +70,23 @@ func _process(delta):
 				npcs[i].path = path
 	pass
 
+var dirPath : String = "res://Assets/Characters/"
+
+func readCharacters():
+	var dir = Directory.new()
+	if dir.open(dirPath) == OK:
+		dir.list_dir_begin()
+		var file_name = dir.get_next()
+		while file_name != "":
+			var file = File.new()
+			var exists = file.file_exists(dirPath + file_name)
+			if exists:
+				file.open(dirPath + file_name, file.READ)
+				var text = file.get_as_text()
+				var parsed = JSON.parse(text)
+				var npc = NPC.instance()
+				npc.create(parsed.result)
+				$YSort.add_child(npc)
+			file.close()
+			file_name = dir.get_next()
+	pass

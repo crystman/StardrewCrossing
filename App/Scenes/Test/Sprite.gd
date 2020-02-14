@@ -18,7 +18,7 @@ func move_along_path(distance: float):
 			position = startPoint.linear_interpolate(path[0], distance / distance_to_next)
 			break
 		elif distance < 0:
-			position - path[0]
+			position = path[0]
 			set_process(false)
 		distance_to_next -= distance_to_next
 		startPoint = path[0]
