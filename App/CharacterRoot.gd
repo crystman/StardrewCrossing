@@ -33,6 +33,7 @@ func create(dictionary):
 	print("Created Character")
 	print(name)
 	print(schedule)
+	print(typeof(schedule))
 #	print(name)
 #	for event in schedule:
 #		print(event)
@@ -51,11 +52,11 @@ func timeChange(time: int):
 	print("New Time Change:")
 	print(name)
 	print(time)
-	print(schedule)
 	for event in schedule:
 		print("schedule event time:")
 		print(event.time)
 		if event.time == time:
+			print(Vector2(event.locationX, event.locationY))
 			return Vector2(event.locationX, event.locationY)
 	return false
 

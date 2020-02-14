@@ -3,45 +3,45 @@
 	"gender": "F",
 	"speed": 400,
 	"schedule": [
-		{
+        {
 			"time": 0,
-			"locationX": 871,
-			"locationY": 667
-		},
-		{
-			"time": 1,
-			"locationX": 845,
-			"locationY": 70
-		},
-		{
+			"locationX": 1282,
+			"locationY": 649
+        },
+        {
+			"time": 2,
+			"locationX": 3842,
+			"locationY": 206
+        },
+        {
+			"time": 3,
+			"locationX": 2749,
+			"locationY": 2233
+        },
+        {
 			"time": 5,
-			"locationX": -538,
-			"locationY": 808
-		},
-		{
-			"time": 6,
-			"locationX": -634,
-			"locationY": 281
-		},
-		{
+			"locationX": 1357,
+			"locationY": 1435
+        },
+        {
 			"time": 7,
-			"locationX": 870,
-			"locationY": 330
-		},
-		{
-			"time": 9,
-			"locationX": 248,
-			"locationY": 444
-		},
+			"locationX": 3634,
+			"locationY": 1087
+        },
+        {
+			"time": 8,
+			"locationX": 1866,
+			"locationY": 2122
+        },
 		{
 			"time": 10,
-			"locationX": -766,
-			"locationY": 732
-		},
-		{
+			"locationX": 1320,
+			"locationY": 1679
+        },
+        {
 			"time": 11,
-			"locationX": -737,
-			"locationY": -43
-		}
+			"locationX": 809,
+			"locationY": 626
+        }
 	]
 }

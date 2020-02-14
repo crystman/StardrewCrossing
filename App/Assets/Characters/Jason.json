@@ -1,0 +1,42 @@
+{
+	"name": "Jason",
+	"gender": "M",
+	"speed": 1000,
+	"schedule": [
+        {
+			"time": 0,
+			"locationX": 2203,
+			"locationY": 152
+        },
+        {
+			"time": 2,
+			"locationX": 1299,
+			"locationY": 1514
+        },
+        {
+			"time": 4,
+			"locationX": 3283,
+			"locationY": 822
+        },
+        {
+			"time": 6,
+			"locationX": 2502,
+			"locationY": 849
+        },
+        {
+			"time": 7,
+			"locationX": 3545,
+			"locationY": 1925
+        },
+        {
+			"time": 9,
+			"locationX": 3947,
+			"locationY": 2327
+        },
+        {
+			"time": 11,
+			"locationX": 1297,
+			"locationY": 1626
+        }
+	]
+}
